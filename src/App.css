@@ -11,6 +11,7 @@ html {
   width: 20vw;
   text-align: center;
   font-family: serif;
+  margin-top: 5px;
 }
 
 .App-header {
@@ -90,7 +91,7 @@ form button:hover {
 
   .header-app,
   form label {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 10px;
   }
 
