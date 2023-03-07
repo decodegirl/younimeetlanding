@@ -106,8 +106,8 @@ function App() {
               Are you a content creator or influencer who wants to meet other creators in your niche and collaborate in content creation?
               <br /><br />
               <br /> YouNI Meet is a platform that provides content creators the opportunity to connect, meet and create with other content creators nearby.
-              <br /> <br /> Linkedin, but for creators, made by two content creators themselves. <br />
-              Encouraging Genuine and Interactive friendships!
+              <br /> <br /> Linkedin, but for creators, made by two content creators themselves. <br /> <br />
+              Encouraging Genuine and Interactive Friendships!
             </p>
           </header>
         </div >
