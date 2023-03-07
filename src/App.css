@@ -55,16 +55,18 @@ button {
   display: block;
   width: 50%;
   padding: .5rem .8rem .5rem .8rem;
-  margin: .9vw auto;
+  margin: 1vw auto;
   border: 0;
   border-radius: 5px;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 form button {
   background-color: #00C5A7;
   color: white;
-  width: 50%;
+  width: 48%;
+  box-sizing: content-box;
 
 }
 
@@ -95,19 +97,20 @@ form button:hover {
   form input,
   textarea,
   button {
-    width: 55vw;
+    margin: 2vw auto;
+    width: 50vw;
   }
 
   form button {
-    width: 53vw;
+    width: 50vw;
 
   }
 
   input::placeholder {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   button {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
