@@ -46,18 +46,27 @@ function WaitlistForm() {
   const handleEmailChange = (event) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setEmail(event.target.value);
-    setIsFormValid(emailPattern.test(event.target.value) && name);
+    setIsFormValid(emailPattern.test(event.target.value) && name && isValidURL(socialmediaaccount));
   }
 
   const handleNameChange = (event) => {
     setName(event.target.value);
-    setIsFormValid(name && event.target.value);
+    setIsFormValid(email && event.target.value && isValidURL(socialmediaaccount));
   }
 
   const handleSocialMediaAccountChange = (event) => {
     setSocialMediaAccount(event.target.value);
+    setIsFormValid(email && name && isValidURL(event.target.value));
   }
 
+  const isValidURL = (url) => {
+    try {
+      new URL(url);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
   const showAlert = () => {
     Swal.fire({
       title: "Success",
