@@ -1,38 +1,112 @@
+html {
+  background-image: url("images/light\ blue.jpg");
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-logo img {
+  width: 20vw;
+  text-align: center;
+  font-family: serif;
 }
 
 .App-header {
-  background-color: #282c34;
+  color: #004aad;
+  text-align: center;
+}
+
+.header-app {
+  font-size: 40px;
+}
+
+.description-text {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+
+}
+
+.App-landingpage {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 55vw;
+  margin: 0rem auto;
+}
+
+.waitlist-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  color: #004aad;
+}
+
+
+form input,
+textarea,
+button {
+  display: block;
+  width: 50%;
+  padding: .5rem .8rem .5rem .8rem;
+  margin: .9vw auto;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+form button {
+  background-color: #00C5A7;
   color: white;
+  width: 50%;
+
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.swal2-confirm {
+  width: 100px;
+}
+
+.swal2-popup .swal2-modal {
+  font-size: x-large;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .description-text {
+    font-size: 12px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-app,
+  form label {
+    font-size: 18px;
+  }
+
+  form input,
+  textarea,
+  button {
+    width: 55vw;
+  }
+
+  form button {
+    width: 53vw;
+
+  }
+
+  input::placeholder {
+    font-size: 10px;
+  }
+
+  button {
+    font-size: 10px;
   }
 }
