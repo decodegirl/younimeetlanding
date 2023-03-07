@@ -87,11 +87,17 @@ form button:hover {
 @media screen and (max-width: 600px) {
   .description-text {
     font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .header-app,
   form label {
     font-size: 22px;
+  }
+
+  .header-logo img {
+    margin-bottom: 20px;
     margin-top: 10px;
   }
 
